@@ -1,7 +1,3 @@
-# Todo list on VanillaJS
-
-GH Pages: https://serega4517.github.io/todo/
-
 # Список задач на VanillaJS
 
 #### [Ссылка](https://serega4517.github.io/todo/) на список задач.
