@@ -1,0 +1,157 @@
+$orange: #fbbe18;
+$dark: #1f2937;
+$dark1: #2e3033;
+$grey: #6b7280;
+$light: #eee;
+$lightRed: #e5194a;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+  background-color: $orange;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: $dark1;
+    margin-bottom: 1rem;
+  }
+}
+
+.new-todo-form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.new-todo-input {
+  flex: 1 1 0%;
+  background-color: $dark;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: $light;
+  font-size: 1.25rem;
+
+  &::placeholder {
+    color: $grey;
+  }
+}
+
+.new-todo-submit {
+  color: $lightRed;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todo-list {
+  padding: 1rem;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $dark1;
+    margin-bottom: 1rem;
+  }
+}
+
+.todos {
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark1;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+    .content {
+      flex: 1 1 0%;
+
+      .text {
+        color: $light;
+        font-size: 1.125rem;
+        width: 100%;
+        display: block;
+        transition: 0.4s;
+
+        &:not(:read-only) {
+          color: $lightRed;
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      margin: 0 -0.5rem;
+
+      button {
+        cursor: pointer;
+        margin: 0 0.5rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: 0.4s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &:active {
+          opacity: 0.6;
+        }
+      }
+
+      .edit {
+        img {
+          width: 17px;
+          height: 17px;
+        }
+      }
+
+      .delete {
+        img {
+          width: 23px;
+          height: 23px;
+        }
+      }
+    }
+  }
+}

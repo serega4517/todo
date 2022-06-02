@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #fbbe18;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #2e3033;
+  margin-bottom: 1rem;
+}
+
+.new-todo-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input,
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.new-todo-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  background-color: #1f2937;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: #eee;
+  font-size: 1.25rem;
+}
+
+.new-todo-input::-webkit-input-placeholder {
+  color: #6b7280;
+}
+
+.new-todo-input:-ms-input-placeholder {
+  color: #6b7280;
+}
+
+.new-todo-input::-ms-input-placeholder {
+  color: #6b7280;
+}
+
+.new-todo-input::placeholder {
+  color: #6b7280;
+}
+
+.new-todo-submit {
+  color: #e5194a;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.new-todo-submit:hover {
+  opacity: 0.8;
+}
+
+.new-todo-submit:active {
+  opacity: 0.6;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todo-list {
+  padding: 1rem;
+}
+
+.todo-list h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #2e3033;
+  margin-bottom: 1rem;
+}
+
+.todos .todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #2e3033;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.todos .todo .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+}
+
+.todos .todo .content .text {
+  color: #eee;
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.todos .todo .content .text:not(:-moz-read-only) {
+  color: #e5194a;
+}
+
+.todos .todo .content .text:not(:read-only) {
+  color: #e5194a;
+}
+
+.todos .todo .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.todos .todo .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.todos .todo .actions button:hover {
+  opacity: 0.8;
+}
+
+.todos .todo .actions button:active {
+  opacity: 0.6;
+}
+
+.todos .todo .actions .edit img {
+  width: 17px;
+  height: 17px;
+}
+
+.todos .todo .actions .delete img {
+  width: 23px;
+  height: 23px;
+}
+/*# sourceMappingURL=styles.css.map */
