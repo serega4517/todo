@@ -1,6 +1,21 @@
 const form = document.querySelector('.new-todo-form');
 const todoInput = document.querySelector('.new-todo-input');
 const listElement = document.querySelector('.todos');
+const submitButton = document.querySelector('.new-todo-submit');
+
+const disableButton = () => {
+  submitButton.setAttribute('disabled', true);
+}
+
+const enableButton = () => {
+  submitButton.removeAttribute('disabled')
+}
+
+todoInput.addEventListener('input', () => {
+  if (todoInput.value.length !== '') {
+    enableButton();
+  }
+})
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -50,6 +65,8 @@ form.addEventListener('submit', (e) => {
   listElement.appendChild(todoElement);
 
   todoInput.value = '';
+
+  disableButton();
 
   todoEditElement.addEventListener('click', () => {
     if (editLogo.getAttribute('src') === './img/edit.svg') {
