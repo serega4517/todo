@@ -12,7 +12,7 @@
 
 * Провести рефакторинг кода
 * Адаптировать под разные разрешения экранов от 320px
-* Исправить баг с добавлением пустой задачи
+* Исправить баг с добавлением пустой задачи :white_check_mark:
 * Добавить чекбокс, при котором перечеркивается задача
 -----
 # Todo list on VanillaJS
@@ -29,4 +29,4 @@
 
 * Perform code refactoring
 * Adapt to different screen resolutions from 320px
-* Fix a bug with adding an empty task
+* Fix a bug with adding an empty task :white_check_mark:
