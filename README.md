@@ -12,8 +12,8 @@
 
 * Провести рефакторинг кода
 * Адаптировать под разные разрешения экранов от 320px
-* Исправить баг с добавлением пустой задачи
-* Добавить чекбокс, при котором перечеркивается задача
+* Исправить баг с добавлением пустой задачи :white_check_mark:
+* Добавить чекбокс при котором перечеркивается задача, когда чекбокс активен
 -----
 # Todo list on VanillaJS
 
@@ -29,4 +29,5 @@
 
 * Perform code refactoring
 * Adapt to different screen resolutions from 320px
-* Fix a bug with adding an empty task
+* Fix a bug with adding an empty task :white_check_mark:
+* Add a checkbox where the task is crossing out, when checkbox is active
