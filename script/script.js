@@ -12,9 +12,7 @@ const enableButton = () => {
 }
 
 todoInput.addEventListener('input', () => {
-  if (todoInput.value.length !== '') {
-    enableButton();
-  }
+  todoInput.value !== '' ? enableButton() : disableButton();
 })
 
 form.addEventListener('submit', (e) => {
