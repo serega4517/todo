@@ -36,6 +36,7 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 input,
@@ -77,6 +78,9 @@ button {
 }
 
 .new-todo-submit {
+  position: absolute;
+  top: 15px;
+  right: 32px;
   color: #e5194a;
   font-size: 1.25rem;
   font-weight: 700;
